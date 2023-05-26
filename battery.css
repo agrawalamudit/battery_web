@@ -1,0 +1,59 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.main{
+    display: flex;
+    padding: 300px 542px;
+}
+
+.battery
+{
+    height: 50px;
+    width: 125px;
+    border: 5px solid yellow;
+    padding: 3px;
+    display: flex;
+}
+
+.end
+{
+    height: 23px;
+    width: 6px;
+    background-color: yellow;
+    margin: 13px 1px;
+    border-radius:0px 5px 5px 0px;
+}
+
+.battery .per
+{
+    height: 34px;
+    width: 30px;
+    background-color: yellow;
+    margin-right:1px;
+    animation: change 6s 5;
+    visibility:hidden;
+}
+@keyframes change
+{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: visible;
+    }
+    50%{
+        width:60px;
+    }
+    75%{
+        width:90px;
+    }
+    100%
+    {
+        width:120px;
+    }
+}
