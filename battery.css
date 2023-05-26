@@ -35,8 +35,8 @@
     width: 30px;
     background-color: yellow;
     margin-right:1px;
-    animation: change 6s 5;
-    visibility:hidden;
+    animation: change 2s none 5;
+    visibility:hidden;   
 }
 @keyframes change
 {
